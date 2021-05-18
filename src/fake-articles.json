@@ -1,0 +1,50 @@
+{
+    "articles": [
+        {
+            "_id": 1,
+            "title": "La taula periòdica",
+            "author": "Sergi Monteagudo",
+            "date": "04-23-2021",
+            "scienceField": "Química",
+            "picture": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Taula_peri%C3%B2dica.svg/1200px-Taula_peri%C3%B2dica.svg.png",
+            "body": "sadalskjdlasjdljlak skadlakjsfw 379327 dksadljsak. 934908320 jdhjask 39209321 kljslda."
+        },
+        {
+            "_id": 2,
+            "title": "La magnitud de l'Univers",
+            "author": "Carl Sagan",
+            "date": "08-31-1984",
+            "scienceField": "Astronomia",
+            "picture": "https://www.ecestaticos.com/image/clipping/27a34b7e1963d494d10edf606db64ec3/las-11-cosas-mas-raras-del-universo-que-conocen-los-astronomos-y-tu-todavia-no.jpg",
+            "body": "934908320 jdhjask 39209321 kljslda" 
+        },
+        {
+            "_id": 3,
+            "title": "Cap a on va la humanitat?",
+            "author": "Nick Bostrom",
+            "date": "02-15-2019",
+            "scienceField": "Transhumanism",
+            "picture": "https://www.dannypid.com/wp-content/uploads/2019/06/singularidad-tecnologica.jpg",
+            "body": "hfdjfn #¢¢239021830n asdlasjdlka"
+        },
+        {
+            "_id": 4,
+            "title": "Teoria del corrent elèctric",
+            "author": "Nikola Tesla",
+            "date": "06-22-1902",
+            "scienceField": "Física",
+            "picture": "https://sites.google.com/site/tecnologia3esocostey/_/rsrc/1465637147934/tema-1-electricitat/electricidad.jpg",
+            "body": "123123njdncjnd"
+            
+        },
+        {
+            "_id": 5,
+            "title": "Teoremes útils per a adolescents rebels",
+            "author": "Pitàgores",
+            "date": "Desconeguda",
+            "scienceField": "Matemàtiques",
+            "picture": "https://www.abc.com.py/resizer/WSdthZx3w2eEU-zpZsIhdd-7yzw=/fit-in/770x495/smart/arc-anglerfish-arc2-prod-abccolor.s3.amazonaws.com/public/CWNJL6XVDFEHRK2KITU2YJKHJE.jpg",
+            "body": "sadeodeofkdksm 67*·34324"
+        }
+    ]
+}

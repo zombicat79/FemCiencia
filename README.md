@@ -1,70 +1,45 @@
-# Getting Started with Create React App
+# FEM CIÈNCIA v1.0.0
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Description
 
-## Available Scripts
+A blog-like web application intented to serve as a multidevice platform for science divulgation in Catalan language. Its purpose is to aggregate and display curated high-quality content (written articles and videos) to the general public, both on the general feed and upon access to a number of specialized sections. It features search and filtering functionalities that allow general users browse for the knowledge they are looking for.
 
-In the project directory, you can run:
+The application also features a private backend interface, intended for creators and contributors to upload and self-manage their own content.
 
-### `npm start`
+## Technologies
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- Base language: JavaScript
+- Front end libraries & frameworks: React.js, Material UI
+- Back end: Node.js + Express.js,
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## User stories / Features
 
-### `npm test`
+### Anonymous users
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Main feed:** Main component of the app. The section of the screen where all the available (and approved) content is displayed and consumed.
+- **Search bar:** An input box where users can write keywords and get filtered relevant results in return.
+- **Filtering toolbox:** A set of filtering options aimed at sorting the available articles and returning only the ones matching the selected prerequisites (date, author, content type, subject, field of expertise, etc).
 
-### `npm run build`
+### Private users
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **Log in:** Gateway to the backend part of the app, only for contributors and content creators. It consists of a simple form requiring username and password. The default credentials are provided by the service managers.
+- **Personal settings:** A form intented for the editing of preferences and the updating of basic operational info, such as username and password.
+- **Upload article:** A functionality provided for content creators and contributors to freely upload their articles / videos, without need of intervention by the service managers.
+- **Edit article:** Similar to the previous one, this functionality allows content creators & contributors to self-manage their uploaded content and edit / amend possible mistakes and shortcomings.
+- **Review article:** A selector and a comment input box at the bottom of every article, for content creators and contributors to approve/reject and offer divergent views on their peers work.
+- **Log out:** A secure way for logged in content creators to leave the platform after they are finished with their business.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Backlog
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **Specialized feeds:** A set of narrowed down feeds belonging to a number of different science categories. They replace the main feed if selected (critical mass of articles required before implementation).
 
-### `npm run eject`
+- **User sign up & authentication:** The possibility for anonymous users to sign up as registered users and get their details stored in a database. That would allow for new features, such as serving content according to preferences or sending newsletters.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- **Questions & comments:** The possibility to post questions or add comments to any articles and their corresponding authors.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- **Suggested content:** The possibility to suggest relevant tailored content to every user, depending on their search history.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+  
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
