@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 const Card = (props) => {
     return (
         <div>
@@ -10,10 +12,10 @@ const Card = (props) => {
                 </div>
             </div>
             <div>
-                <p>{props.article.body}</p>
+                <p>{props.article.preview}</p>
             </div>
             <div>
-                <button>Més</button>
+                <Link to={`/article/${props.article._id}`}><button>Més</button></Link>
             </div>
         </div>
     )

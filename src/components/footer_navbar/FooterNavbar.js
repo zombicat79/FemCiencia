@@ -1,14 +1,16 @@
+import { Link } from 'react-router-dom';
+
 const FooterNavbar = () => {
     return (
         <section>
             <div>
-                <h2>Info</h2>
+                <Link to="/info">Info</Link>
             </div>
             <div>
-                <h2>Logo</h2>
+                <Link to="/">Logo</Link>
             </div>
             <div>
-                <h2>Contact</h2>
+                <Link to="/contact">Contact</Link>
             </div>
         </section>
     )

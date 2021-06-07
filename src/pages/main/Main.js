@@ -19,7 +19,7 @@ const Main = function() {
                 return articles
             }
             else {
-                return articles.filter((arr) => arr.title.includes(searchValue)) 
+                return articles.filter((arr) => arr.author.includes(searchValue)) 
             }
         });
     }
