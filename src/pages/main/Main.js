@@ -1,11 +1,24 @@
 import { useState } from 'react';
+import { Box, Typography } from '@material-ui/core';
+import { withStyles } from '@material-ui/core/styles';
 
 import ArticleSearch from './../../components/article_search/ArticleSearch';
 import Feed from './../../components/feed/Feed';
 
 import fakeArticles from './../../fake-articles.json';
 
-const Main = function() {
+const styles = {
+    topContainer: {
+        marginTop: "6em",
+        marginBottom: "6em"
+    },
+    mainTitle: {
+        fontSize: "10px"
+    }
+}
+
+const Main = function(props) {
+    const { classes } = props;
     const articles = fakeArticles.articles;
     
     const [feed, setFeed] = useState(articles)
@@ -19,13 +32,16 @@ const Main = function() {
                 return articles
             }
             else {
-                return articles.filter((arr) => arr.author.includes(searchValue)) 
+                return articles.filter((obj) => obj.title.includes(searchValue)) 
             }
         });
     }
     
     return (
         <main>
+            <Box component="section" className={classes.topContainer}>
+                <Typography variant="h2" component="h1" color="primary" align="center">FemCiència</Typography>
+            </Box>
             <section>
                 <h1>FemCiència</h1>
                 <h2>El teu espai de divulgació científica en català</h2>
@@ -41,4 +57,4 @@ const Main = function() {
     )
 }
 
-export default Main;
+export default withStyles(styles)(Main);

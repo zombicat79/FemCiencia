@@ -1,14 +1,32 @@
-const HeaderNavbar = () => {
+import { AppBar, Toolbar, IconButton, Button} from '@material-ui/core';
+import MenuIcon from '@material-ui/icons/Menu';
+import { withStyles } from '@material-ui/core/styles';
+
+const styles = {
+    root: {
+        flexGrow: 1,
+    },
+    toolbar: {
+        display: "flex",
+        justifyContent: "space-between"
+    },
+}
+
+const HeaderNavbar = (props) => {
+    const { classes } = props;
+    
     return (
-        <section>
-            <div>
-                <h2>Log in</h2>
-            </div>
-            <div>
-                <h2>Menu</h2>
-            </div>
-        </section>
+        <div className={classes.root}>
+            <AppBar position="fixed">
+                <Toolbar className={classes.toolbar}>
+                    <Button color="inherit">Identifica't</Button>
+                    <IconButton edge="start" color="inherit" aria-label="menu">
+                        <MenuIcon />
+                    </IconButton>
+                </Toolbar>
+            </AppBar>
+        </div>      
     )
 }
 
-export default HeaderNavbar;
+export default withStyles(styles)(HeaderNavbar);
