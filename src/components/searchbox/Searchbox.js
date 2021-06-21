@@ -1,7 +1,9 @@
+import { TextField } from '@material-ui/core';
+
 const Searchbox = (props) => {
     return (
         <div>
-            <input onChange={(e) => props.handleSearch(e)} type="text" name="searchbox" value={props.searchValue} placeholder="Cerca" />
+            <TextField label="Cerca" onChange={(e) => props.handleSearch(e)} type="text" name="searchbox" value={props.searchValue} />
         </div>
     )
 }

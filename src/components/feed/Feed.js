@@ -1,12 +1,14 @@
+import { Container } from '@material-ui/core';
+
 import Card from './../card/Card';
 
 const Feed = (props) => {
     return (
-        <article>
+        <Container component="article">
             {props.articles.map((oneArticle) => {
                 return <Card key={oneArticle._id} article={oneArticle} />
             })}
-        </article>
+        </Container>
     )
 }
 
