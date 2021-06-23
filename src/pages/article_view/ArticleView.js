@@ -3,11 +3,8 @@ import fakeArticles from './../../fake-articles.json';
 const ArticleView = (props) => {
     const { id } = props.match.params;
     const requestedArticle = fakeArticles.articles.filter((current) => {
-        if (current._id == id) {
-            return current;
-        }
+        return current._id == id ? current : null;
     })
-    console.log(requestedArticle)
 
     return (
         <main>
@@ -17,7 +14,7 @@ const ArticleView = (props) => {
                     <h3>{requestedArticle[0].scienceField}</h3>
                     <h3>{requestedArticle[0].author} {requestedArticle[0].date}</h3>
                 </div>
-                <img src={requestedArticle[0].picture} />
+                <img src={requestedArticle[0].picture} alt="Article header" />
             </section>
             <section>
                 <p>{requestedArticle[0].body}</p>

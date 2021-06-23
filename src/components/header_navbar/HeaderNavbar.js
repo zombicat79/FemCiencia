@@ -16,7 +16,7 @@ const HeaderNavbar = (props) => {
     const { classes } = props;
     
     return (
-        <div className={classes.root}>
+        <nav className={classes.root}>
             <AppBar position="fixed">
                 <Toolbar className={classes.toolbar}>
                     <Button color="inherit">Identifica't</Button>
@@ -25,7 +25,7 @@ const HeaderNavbar = (props) => {
                     </IconButton>
                 </Toolbar>
             </AppBar>
-        </div>      
+        </nav>      
     )
 }
 

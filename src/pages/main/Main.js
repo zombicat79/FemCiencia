@@ -31,9 +31,9 @@ const styles = {
         alignItems: "center",
         marginBottom: "3rem"
     },
-    randomButton: {
-        color: "red",
-        marginLeft: "500px"
+    bottomContainer: {
+        paddingBlock: "0.5rem",
+        marginBottom: "1rem"
     }
 }
 
@@ -65,9 +65,9 @@ const Main = function(props) {
                 <img src={atomicPic} className={classes.logo} alt="Atom logo" />
             </Box>
             <Box component="section" className={classes.middleContainer}>
-                <ArticleSearch handleSearch={handleSearch} searchValue={searchValue} />
+                <ArticleSearch handleSearch={handleSearch} searchValue={searchValue} articles={feed} />
             </Box>
-            <Paper component="section" elevation={10}>
+            <Paper component="section" className={classes.bottomContainer} elevation={10}>
                 <Feed articles={feed} />
             </Paper>
         </Container>

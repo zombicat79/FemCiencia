@@ -5,7 +5,7 @@ const ArticleSearch = (props) => {
     return (
         <article>
             <Searchbox handleSearch={props.handleSearch} searchValue={props.searchValue} />
-            <RandomFetch />
+            <RandomFetch articles={props.articles} />
         </article>
     )
 }
